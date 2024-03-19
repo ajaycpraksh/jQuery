@@ -55,7 +55,94 @@ $(".test")
 jQuery Event
 ------------
 All the different visitors' actions that a web page can respond to are called events.
-click
+
+Click
 -----
+The click() method attaches an event handler function to an HTML element.
+
+The function is executed when the user clicks on the HTML element.
+
+mouseenter()
+----------
+The mouseenter() method attaches an event handler function to an html element.The function is executed when the mouse pointer enters the html element: 
+
+mouseleave()
+------------
+The mouseleave() method attaches an event handler function to an html  element
+The function is executed when the mouse pointer enters the html element
+
+Hide() and Show()
+-----------------------
+
+we can hide  and show HTML element with the hide() and show( ) methods
+$(selector).hide(speed,callback);
+
+$(selector).show(speed,callback);
+
+FADING METHODS
+-------------
+
+Fadeln () 
+--------
+The jquery fadein() method is used to fad in  a hidden element
+syntax:
+$(selector).fadeIn(speed,callback);
+
+FadenOut ()
+--------
+The  jquery fadeout () method is used to fade out a visible element
+$(selector).fadeOut(speed,callback);
+ The optional speed parameter specifies the duration of the effect .it can take the following values :"slow","fast",or milliseconds.
+The optional callback parameter is function to be executed after the fading completes
+
+ SLIDING METHODS
+ ---------------
+ 
+ SlideToggle()
+ ----------
+
+The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.
+
+If the elements have been slid down, slideToggle() will slide them up.If the elements have been slid up, slideToggle() will slide them down.
+ 
+ syntax:$(selector).slideToggle(speed,callback);
+ The optional speed parameter can take the following values: "slow", "fast", milliseconds.
 
 
+Animation
+----------
+
+animation()
+---------
+The jQuery animate() method is used to create custom animations.
+
+Syntax:$(selector).animate({params},speed,callback);
+
+The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.The optional callback parameter is a function to be executed after the animation completes.
+
+GET/SET
+----
+jQuery provides methods to get and set the content or attributes of HTML elements.
+text() 
+Sets or returns the text content of selected elements
+html()
+Sets or returns the content of selected elements 
+val()
+Sets or returns the value of form fields
+
+ADD/REMOVE ELEMENT
+------------------
+jQuery provides methods to dynamically add or remove HTML elements from the DOM (Document Object Model).
+Methods like .append(), .prepend(),.remove(),
+ append() - Inserts content at the end of the selected elements
+prepend() - Inserts content at the beginning of the selected elements
+remove() - Removes the selected element 
+
+CSS classes
+------------
+With jQuery, it is easy to manipulate the style of elements.jQuery has several methods for CSS manipulation.
+
+*addClass(): This method adds one or more CSS classes to the selected elements.
+            $("selector").addClass("className");
+*removeClass(): This method removes one or more CSS classes from the selected elements.
+            $("selector").removeClass("className");
